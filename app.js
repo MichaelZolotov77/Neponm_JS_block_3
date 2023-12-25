@@ -3,8 +3,4 @@ const developer = {
   surname: "Popov",
   isMaried: false,
 };
-console.log(developer);
-
-delete developer.isMaried;
-
-console.log(developer["surname"]); // обращение к переменной
+console.log("surname" in developer); // проверка наличия ключа с заданным именем в объекте

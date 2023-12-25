@@ -1,19 +1,15 @@
-const developer = {
-  name: "Vasiliy",
-  surname: "Popov",
-  age: 30,
-  skills: ["JavaScript", "TypeScript", "CSS"],
-  isMaried: false,
-  addAge() {
-    this.age++;
-    console.log(this);
+const person = {
+  name: "Anna",
+  surname: "Dance",
+  age: 18,
+  greeting() {
+    console.log("hello");
   },
-  getMarried() {
-    this.isMaried = true;
-  },
-  getDivorced() {
-    this.isMaried = false;
+  changeSurname(surname) {
+    this.surname = surname;
   },
 };
 
-console.log(developer.hasOwnProperty("name"));
+person.greeting();
+person.changeSurname("Musatova");
+console.log(person);

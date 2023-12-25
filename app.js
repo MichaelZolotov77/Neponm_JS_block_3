@@ -7,4 +7,4 @@ console.log(developer);
 
 delete developer.isMaried;
 
-console.log(developer);
+console.log(developer["surname"]); // обращение к переменной

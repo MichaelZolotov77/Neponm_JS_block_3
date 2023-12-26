@@ -1,12 +1,14 @@
-// 1
-const fruits = ["apple", "banana", "melon", "orange"];
-const hasOrange = fruits.includes("orange");
-console.log(hasOrange);
-// 2
-const cars = ["BMW", "Nissan", "VW", "Skoda", "Audi", "Kia"];
-const favoriteCars = cars.slice(0, 3);
-console.log(favoriteCars);
+function sum(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    throw new Error("В функцию не переданы числа для сложения");
+  }
+  return a + b;
+}
 
-// 3
-const otherCars = cars.slice(-3);
-console.log(otherCars);
+try {
+  sum();
+} catch (err) {
+  console.error(err.message);
+}
+
+console.log("end");
